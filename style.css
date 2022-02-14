@@ -1,0 +1,85 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+html{
+    font-weight: bold;
+}
+h1 {
+    background-color: orange;
+    color: white;
+    font-size: 100px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/*body style*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("pizza.jpg");
+}
+
+/*container style*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    height: 380px;
+    border-radius: 20px;
+    background-color: rgb(253, 255, 219);
+    box-shadow: 15px 15px 10px rgba(33,45,58,0.3);
+    overflow: hidden;
+    position: relative;
+    font-size: large;
+    padding-top: 20px;
+}
+
+.container .pizza{
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.container .totalPrice{
+    color:blue;
+ }
+
+/*radio button style*/
+[type=radio]:checked ~ label {
+    background: white;
+    padding-bottom: 0px;
+    border-bottom: 4px solid blue;
+    margin-bottom: 5px;
+    z-index: 2;
+    justify-content: center;
+    padding-left: 5px;
+    
+}
+
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(58, 140, 235, 0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
